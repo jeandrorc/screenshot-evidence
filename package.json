@@ -1,0 +1,32 @@
+{
+  "name": "screenshot-evidence",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CLI + MCP + Skill to capture multi-locale, multi-viewport, multi-domain screenshots for MR/QA evidence",
+  "type": "module",
+  "bin": {
+    "screenshot-evidence": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev:cli": "tsx src/cli.ts",
+    "dev:mcp": "tsx src/mcp.ts",
+    "test": "node --test --import tsx tests/*.test.ts",
+    "playwright:install": "playwright install chromium"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.1",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "commander": "^12.1.0",
+    "playwright": "^1.58.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
