@@ -3,6 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "description": "CLI + MCP + Skill to capture multi-locale, multi-viewport, multi-domain screenshots for MR/QA evidence",
+  "license": "MIT",
+  "author": "Jeandro Couto",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeandrorc/screenshot-evidence.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeandrorc/screenshot-evidence/issues"
+  },
+  "homepage": "https://github.com/jeandrorc/screenshot-evidence#readme",
+  "keywords": [
+    "screenshot",
+    "playwright",
+    "qa",
+    "mcp",
+    "cli"
+  ],
   "type": "module",
   "bin": {
     "screenshot-evidence": "./dist/cli.js"
